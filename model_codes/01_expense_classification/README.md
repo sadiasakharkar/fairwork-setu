@@ -38,3 +38,28 @@ python predict.py --text "Uber ride 250 rupees"
 ## Notes
 Training and testing use separate data splits.
 Review class counts and evaluation metrics before using predictions in the app.
+
+
+
+
+
+<!-- status -->
+## Development Status
+
+**Status:** Initial scaffold — dataset not yet added; model not yet trained or validated.
+
+### Pending Tasks
+- Inspect the finalized dataset and identify the actual input and target columns.
+- Update EDA, preprocessing, training, evaluation, and prediction code to match the dataset.
+- Handle missing values, duplicates, and class imbalance where appropriate.
+- Prevent data leakage and evaluate on held-out test data.
+- Report accuracy, precision, recall, F1-score, and the confusion matrix.
+- Save the trained model and required preprocessing artifacts.
+- Verify prediction inputs and outputs for Setu backend integration.
+- Update setup instructions and test the complete workflow.
+
+### Algorithm
+- TF-IDF for transaction text features.
+- Logistic Regression for expense category classification.
+
+**Note:** The algorithm and implementation must be reviewed against the actual dataset before the model is considered validated or ready for integration.
